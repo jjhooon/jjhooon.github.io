@@ -48,6 +48,49 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="contactgen_pami_stop()" onmouseover="contactgen_pami_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='contactgen_pami_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/ContactGen++.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ContactGen++.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function contactgen_pami_start() {
+            document.getElementById('contactgen_pami_image').style.opacity = "1";
+          }
+
+          function contactgen_pami_stop() {
+            document.getElementById('contactgen_pami_image').style.opacity = "0";
+          }
+          contactgen_pami_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:top">
+      <span class="papertitle">ContactGen++: Physical Interaction-Guided Collaborative 3D Human Generation for Partners</span>
+        <br>
+        <strong>Jaehoon Jang*</strong>,
+        Inha Lee*,
+        Minje Kim,
+        <a href="https://scholar.google.com/citations?hl=ko&user=hNxIPzMAAAAJ&view_op=list_works&sortby=pubdate">Kyungdon Joo</a>
+        <br>
+        <em>RA-L</em>, 2024
+        <br>
+        [
+        <a href="https://vision3d-lab.github.io/AiSDF/">Project page</a>
+        |
+        <a href="https://arxiv.org/abs/2403.01861">arXiv</a>
+        ]
+        <p></p>
+        <p>
+        Given a stream of posed depth images, we propose a structure-aware online SDF reconstruction framework for indoor scenes under the Atlanta world assumption.
+        </p>
+        (* Equal contribution. Alphabetic order)
+      </td>
+    </tr>   
+
     <tr onmouseout="aisdf_stop()" onmouseover="aisdf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -71,23 +114,17 @@
       <td style="padding:20px;width:75%;vertical-align:top">
       <span class="papertitle">AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes</span>
         <br>
-        <strong>Jaehoon Jang*</strong>,
-        Inha Lee*,
-        Minje Kim,
+        <a href="https://github.com/dongjunKu">Dongjun Gu</a>,
+        <a href="https://kitsunetic.github.io/">Jaehyeok Shim</a>,
+        <strong>Jaehoon Jang</strong>,
+        <a href="https://github.com/Kang-ChangWoo">Changwoo Kang</a>,
         <a href="https://scholar.google.com/citations?hl=ko&user=hNxIPzMAAAAJ&view_op=list_works&sortby=pubdate">Kyungdon Joo</a>
         <br>
-        <em>RA-L</em>, 2024
+        <em>Under review</em>
         <br>
-        [
-        <a href="https://vision3d-lab.github.io/AiSDF/">Project page</a>
-        |
-        <a href="https://arxiv.org/abs/2403.01861">arXiv</a>
-        ]
         <p></p>
         <p>
-        Given a stream of posed depth images, we propose a structure-aware online SDF reconstruction framework for indoor scenes under the Atlanta world assumption.
         </p>
-        (* Equal contribution. Alphabetic order)
       </td>
     </tr>   
 
