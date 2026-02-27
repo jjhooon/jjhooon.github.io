@@ -563,7 +563,7 @@
         <!-- ================= AWARDS ================= -->
         <h2>Awards & Honors</h2>
         <ul>
-            <li class="yw_list">Bronze prize, Samsung Humantech Paper Awards, 2026</li>
+            <li class="yw_list">Bronze Award, Samsung HumanTech Paper Awards, 2026</li>
             <li class="yw_list">Winner of AI Technology Open Workshop, UNIST, 2024 (Gifted by HD Hyundai)</li>
         </ul>
 
@@ -613,15 +613,15 @@
                 notes: [
                     "- Bronze Award from Samsung HumanTech Paper Awards",
                     "- Presented in Woskrhop on Generating Digital Twins from Images and Videos with ICCV 2025"
-                ],
+                ] 
             },
-            // {
-            //     image: "./images/ContactGen++.png",
-            //     title: "A Paper on Physical Interaction-Guided 3D Human Motion Generation",
-            //     authors: "",
-            //     venue: "To be updated",
-            //     links: []
-            // },
+            {
+                image: "./images/ContactGen++.png",
+                title: "A Paper on Physical Interaction-Guided 3D Human Motion Generation",
+                authors: "",
+                venue: "To be updated",
+                links: []
+            },
             {
                 image: "./images/aisdf.png",
                 title: "AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes",
@@ -672,7 +672,16 @@
                 }
 
                 // Note (small tag)
-                let noteHtml = item.note ? `<small style="color:#555; display: block; margin-bottom: 0;">${item.note}</small>` : '';
+                // let noteHtml = item.note ? `<small style="color:#555; display: block; margin-bottom: 0;">${item.note}</small>` : '';
+                let noteHtml = '';
+
+                if (Array.isArray(item.notes) && item.notes.length > 0) {
+                noteHtml = item.notes
+                    .map(n => `<small style="color:#555; display:block; margin-bottom:0;">${n}</small>`)
+                    .join('');
+                } else if (item.note) {
+                noteHtml = `<small style="color:#555; display:block; margin-bottom:0;">${item.note}</small>`;
+                }
 
                 // HTML 조립
                 html += `
