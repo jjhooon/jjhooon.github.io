@@ -10,20 +10,11 @@
          ========================================== -->
     <!-- Open Graph (카카오톡, 페이스북, 슬랙, 링크드인 등) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kim-youwang.github.io/" />
-    <meta property="og:title" content="Kim Youwang" />
-    <meta property="og:description" content="Ph.D. Student at POSTECH | Real-Time Graphics & Generative AI" />
-    <meta property="og:image" content="https://kim-youwang.github.io/media/favicon.png" />
-
-    <!-- Twitter Cards (트위터/X) -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="https://kim-youwang.github.io/" />
-    <meta name="twitter:title" content="Kim Youwang" />
-    <meta name="twitter:description" content="Ph.D. Student at POSTECH | Real-Time Graphics & Generative AI" />
-    <meta name="twitter:image" content="https://kim-youwang.github.io/media/favicon.png" />
-    <!-- ========================================== -->
-
-    <link rel="icon" type="image/png" href="./media/favicon.png">
+    <meta property="og:url" content="https://jjhooon.github.io/" />
+    <meta property="og:title" content="Jaehoon Jang" />
+    <meta property="og:description" content="3D AI Researcher" />
+    <!-- <meta property="og:image" content="https://jjhooon.github.io/media/favicon.png" /> -->
+    <!-- <link rel="icon" type="image/png" href="./media/favicon.png"> -->
 
     <!-- 기존 JS 파일 연결 유지 -->
     <script type="text/javascript" src="js/tracker.js"></script>
@@ -481,12 +472,12 @@
         <!-- ================= INTRO ================= -->
         <div class="intro">
             <div class="profile-photo">
-                <img src="images/jaehoon.jpeg" alt="Jaehoon Jang">
+                <img src="images/jaehoon2.png" alt="Jaehoon Jang">
             </div>
 
             <div class="intro-content">
                 <h1>Jaehoon Jang</h1>
-                <small style="color:gray">wkdwogns1997@gmai.com</small>
+                <small style="color:gray">wkdwogns1997@gmail.com</small>
                 <p>
                     I am an AI researcher at <a href="https://www.smilegate.com/ko/">Smilegate AI</a>. I received my Master's degree from the <a href="https://unist.info/">3D Vision & Robotics lab</a> at <a href="https://unist-kor.unist.ac.kr/">UNIST</a>, supervised by Prof. <a href="https://unist.info/?page_id=194">Kyungdon Joo</a>. 
                     My primary research focuses on creating 3D worlds through neural rendering, implicit neural representations, and generative models, while extending these techniques to real-world applications in robotics and gaming.
@@ -617,17 +608,18 @@
                     { name: "Project page", url: "https://vision3d-lab.github.io/lighthousegs/" },
                     { name: "Paper", url: "https://arxiv.org/abs/2507.06109" },
                     { name: "Video", url: "https://www.youtube.com/watch?v=dBxeQyllqHA" },
-                    { name: "Code(TBU)", url: "https://github.com/kaist-ami/elite" }
+                    { name: "Code(TBU)", url: "" }
                 ],
-                note: "- Presented in Woskrhop on Generating Digital Twins from Images and Videos with ICCV 2025" // 필요한 경우 주석 해제하여 사용
+                note: "- Bronze Award from Samsung HumanTech Paper Awards",
+                note: "- Presented in Woskrhop on Generating Digital Twins from Images and Videos with ICCV 2025"
             },
-            {
-                image: "./images/ContactGen++.png",
-                title: "A Paper on Physical Interaction-Guided 3D Human Motion Generation",
-                authors: "",
-                venue: "To be updated",
-                links: []
-            },
+            // {
+            //     image: "./images/ContactGen++.png",
+            //     title: "A Paper on Physical Interaction-Guided 3D Human Motion Generation",
+            //     authors: "",
+            //     venue: "To be updated",
+            //     links: []
+            // },
             {
                 image: "./images/aisdf.png",
                 title: "AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes",
@@ -645,7 +637,8 @@
                 venue: "AAAI 2024",
                 links: [
                     { name: "Project page", url: "https://dongjunku.github.io/contactgen/" },
-                    { name: "Paper", url: "https://arxiv.org/abs/2401.17212" }
+                    { name: "Paper", url: "https://arxiv.org/abs/2401.17212" },
+                    { name: "Code", url: "https://github.com/dongjunKu/ContactGen/" }
                 ]
             }
         ];
@@ -677,7 +670,7 @@
                 }
 
                 // Note (small tag)
-                let noteHtml = item.note ? `<small style="color:gray; display: block; margin-bottom: 0;">${item.note}</small>` : '';
+                let noteHtml = item.note ? `<small style="color:#555; display: block; margin-bottom: 0;">${item.note}</small>` : '';
 
                 // HTML 조립
                 html += `
